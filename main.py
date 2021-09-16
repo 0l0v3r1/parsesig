@@ -27,7 +27,7 @@ async def forwarder(event):
     valid = emanuelefilter(text)
     text = transform_text(text)
 
-    count = 0
+    count = 10
     for cht in channel_output:
         try:
             ref = int(r.get(f"{cht}-{reply_msg}").decode('utf-8'))
